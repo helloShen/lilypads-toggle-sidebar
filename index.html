@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url('./css/lilypads-toggle-sidebar.css');
+    </style>
+    <script type="module" defer>
+      import { lilypadsToggleSidebar } from './js/lilypads-toggle-sidebar.js';
+      lilypadsToggleSidebar.init();
+    </script>
+    <title>Lilypad Toggle Sidebar</title>
+  </head>
+  <body>
+    <div class="lilypads-toggle-sidebar-container">
+      <div class="lilypads-toggle-sidebar hide">
+        <div class="logo">
+          <a href="#">
+            <i class="material-icons menu">menu</i>
+            <span class="name">Lilypads</span>
+          </a>
+        </div>
+        <div class="section">
+            <a href="#"
+            ><i class="material-icons">home</i
+            ><span class="name">Home</span></a
+            >
+        </div>
+        <div class="section">
+            <a href="#"
+            ><i class="material-icons">laptop_mac</i
+            ><span class="name">Desktop</span></a
+            >
+            <a href="#"
+            ><i class="material-icons">phone_iphone</i
+            ><span class="name">IOS</span></a
+            >
+            <a href="#"
+            ><i class="material-icons">android</i
+            ><span class="name">Android</span
+            ></a>
+            <a href="#"
+            ><i class="material-icons">gamepad</i
+            ><span class="name">Console</span
+            ></a>
+        </div>
+        <div class="section">
+            <a href="#"
+            ><i class="mdi mdi-language-javascript"></i
+            ><span class="name">Javascript</span></a
+            >
+            <a href="#"
+            ><i class="mdi mdi-language-java"></i
+            ><span class="name">Java</span></a
+            >
+            <a href="#"
+            ><i class="mdi mdi-language-kotlin"></i
+            ><span class="name">Kotlin</span></a
+            >
+            <a href="#"
+            ><i class="mdi mdi-language-python"></i
+            ><span class="name">Python</span></a
+            >
+            <a href="#"
+            ><i class="mdi mdi-language-c"></i
+            ><span class="name">C</span></a
+            >
+        </div>
+        <div class="section">
+            <a href="#"
+            ><i class="material-icons">settings</i
+            ><span class="name">Settings</span></a
+            >
+            <a href="#"
+            ><i class="material-icons">login</i
+            ><span class="name">Sign in</span></a
+            >
+        </div>
+      </div>
+      <div class="lilypads-toggle-main">
+          <!-- 
+            Your Content 
+          -->
+      </div>
+    </div>
+  </body>
+</html>

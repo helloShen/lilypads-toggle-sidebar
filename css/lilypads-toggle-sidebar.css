@@ -1,0 +1,158 @@
+/* Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Poppins:wght@300;400;500;600;700&family=Roboto&display=swap');
+
+/* Google Icon Font */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/* Material Design Icon */
+@import url('https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css');
+
+
+/*****************
+ * Normalization *
+ ****************/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.lilypads-toggle-sidebar-container {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    --black: #000000;
+    --white: #ffffff;
+
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-400: #94a3b8;
+    --slate-500: #64748b;
+    --slate-600: #475569;
+    --slate-700: #334155;
+    --slate-800: #1e293b;
+    --slate-900: #0f172a;
+
+    --slate-green-100: #2FBA98;
+    --slate-green-300: #00929A;
+    --slate-green-500: #1F6881;
+
+    --shadow: #9ca3afaa;
+}
+
+.lilypads-toggle-sidebar ul,
+.lilypads-toggle-sidebar ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lilypads-toggle-sidebar a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+
+
+
+
+/**************************
+ * Lilypad toggle sidebar *
+ *************************/
+.lilypads-toggle-sidebar-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    min-height: 100vh;
+}
+
+.lilypads-toggle-sidebar {
+    grid-column: 1 / span 1;
+    width: 12.5rem; /* 1 + 2 + 1.25 + 7 + 1 + .25 = 12.5 */
+    font-family: 'Poppins';
+    color: var(--slate-green-100);
+    background-color: var(--slate-700);
+    box-shadow: 1px 1px 4px var(--shadow);
+    transition: all .3s;
+}
+
+.lilypads-toggle-sidebar a {
+    /* style */
+    padding: .5rem 1rem;
+    /* inner layout */
+    display: grid;
+    grid-template-columns: 2rem 7rem;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.lilypads-toggle-sidebar > .section i {
+    justify-self: center;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+}
+
+.lilypads-toggle-sidebar > .section span.name {
+    font-size: .75rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+}
+
+.lilypads-toggle-sidebar > .logo > a {
+    padding: 1rem;
+}
+
+.lilypads-toggle-sidebar > .logo i {
+    justify-self: center;
+    font-size: 2rem;
+}
+
+.lilypads-toggle-sidebar > .logo span.name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 2rem;
+    cursor: pointer;
+}
+
+.lilypads-toggle-sidebar > .section a:active,
+.lilypads-toggle-sidebar > .section a:hover {
+    color: var(--white);
+    background-color: var(--slate-green-300);
+    border-right: .25rem solid var(--slate-green-100);
+}
+
+.lilypads-toggle-sidebar > .logo i:hover {
+    color: var(--white);
+}
+
+.lilypads-toggle-sidebar > .section {
+    margin: 1.5rem 0;
+}
+
+.lilypads-toggle-sidebar.hide {
+    width: 4.25rem; /* 1 + 2 + 1.25 = 4.25*/
+}
+
+.lilypads-toggle-sidebar.hide span.name {
+    opacity: 0;
+}
+
+.lilypads-toggle-sidebar span.name {
+    transition: opacity .3s;
+}
+
+.lilypads-toggle-main {
+    z-index: 1;
+    background-color: var(--slate-50);
+}
+
+
+
+
+
+
+
