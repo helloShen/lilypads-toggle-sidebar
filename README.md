@@ -2,7 +2,7 @@
 ![javascript](https://img.shields.io/badge/javascript-ES6-brightgreen) ![grid](https://img.shields.io/badge/grid-1.0-brightgreen) ![css3](https://img.shields.io/badge/css-3.0-brightgreen) ![html5](https://img.shields.io/badge/html-5.0-brightgreen) ![svg](https://img.shields.io/badge/svg-1.1-brightgreen)
 
 
-A light-weight reusable Js+Css toggle sidebar. 
+A light-weight reusable Js+Css toggle sidebar. Online preview: [ciaoshen.com](http://ciaoshen.com/lilypads-toggle-sidebar)
 
 <img src="./image/lilypads-toggle-sidebar.gif" width="300">
 
