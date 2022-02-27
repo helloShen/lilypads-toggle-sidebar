@@ -3,6 +3,7 @@
 
 
 A light-weight reusable Js+Css toggle sidebar. 
+
 <img src="./image/lilypads-toggle-sidebar.gif" width="300">
 
 Everything is encapsulated in the following 3 namespaces. No name polusion will be introduced into your project. 
